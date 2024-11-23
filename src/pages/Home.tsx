@@ -20,6 +20,12 @@ import worldMap from "../assets/world-map.png";
 import addLocation from "../assets/add_location.png";
 import favorite from "../assets/favorite.png";
 import groups from "../assets/groups.png";
+import framedPicture from "../assets/framed-picture.svg";
+import bgCover from "../assets/bg-cover.png";
+import whitePlay from "../assets/white-play.png";
+import mountain from "../assets/mountains.png";
+import cover from "../assets/cover2.jpg";
+import filter from "../assets/filter.png";
 
 import ImageCard from "../components/ImageCard";
 import InfoCard from "../components/InfoCard";
@@ -221,6 +227,89 @@ const Home = () => {
               title="Ramai di didekatmu"
               sub="Spot yang paling ramai dikunjungi para warga sekaligus para wisatawan"
             />
+          </div>
+        </div>
+      </section>
+      <section className="py-20">
+        <div className="container mx-auto">
+          <div className="flex justify-between items-center">
+            <div className="flex flex-col gap-3">
+              <p className="text-[#4475F2] text-[18px] leading-[26.5px] font-extrabold tracking-9">
+                MENGENAL DESTINIZE
+              </p>
+              <h2 className="text-[#14183E] text-5xl leading-[50px] tracking--1 font-extrabold flex items-center gap-4">
+                <img
+                  src={framedPicture}
+                  alt="framed picture emoji"
+                  width={40}
+                  height={40}
+                />
+                <div className="w-2.5 h-2.5 bg-[#14183E] rounded-full" />
+                Galeri Pariwisata & Blog Travel
+              </h2>
+            </div>
+            <button className="text-[#4475F2] text-[17px] leading-[60px] font-semibold flex items-center gap-4">
+              Lihat semua
+              <img
+                src={rightArrow}
+                alt="right arrow icon"
+                width={20}
+                height={20}
+              />
+            </button>
+          </div>
+          <div className="pt-[54px] flex justify-center items-center gap-[43px]">
+            <div className="max-w-[276px] h-[455px] rounded-2xl	shadow-lg">
+              <img
+                src={mountain}
+                alt="mountains image"
+                className="rounded-t-lg"
+              />
+              <div className="flex flex-col gap-4 px-6 py-5 bg-white">
+                <p className="text-[#BDBDBD] font-semibold text-sm leading-6 tracking-wide">
+                  26 DESEMBER 2021
+                </p>
+                <h3 className="text-[#252B42] leading-6 text-base font-bold ">
+                  Tips naik gunung Bromo Biar gak capek cyin 😥😛
+                </h3>
+                <p className="text-[#737373] font-sm leading-6 font-semibold tracking-wide">
+                  Jadi gini gann, anda tau bromo? yaaa gunung kann!
+                </p>
+                <p className="text-[#23A6F0] cursor-pointer font-sm leading-6 font-semibold tracking-wide">
+                  Baca selengkapnya ..
+                </p>
+              </div>
+            </div>
+            <div className="grow h-[455px] relative shadow-2xl rounded-2xl flex justify-center items-center">
+              <img
+                src={bgCover}
+                alt="cover image"
+                className="absolute top-0 left-0 w-full h-full object-cover rounded-2xl"
+              />
+              <div className="bg-[#23A6F0] w-24 h-24 rounded-full flex justify-center items-center z-20 cursor-pointer">
+                <img src={whitePlay} alt="play button" width={19} height={22} />
+              </div>
+            </div>
+          </div>
+          <div className="relative h-[205px] w-full mt-[37px] shadow-lg">
+            <img
+              src={cover}
+              alt="cover image"
+              className="absolute top-0 left-0 w-full h-full object-cover rounded-2xl z-10"
+            />
+            <img
+              src={filter}
+              alt="filter image"
+              className="absolute top-0 left-0 w-full h-full object-cover rounded-2xl z-20"
+            />
+            <div className="p-[25px] h-[182px] max-w-[745px] flex flex-col gap-[15px] absolute left-0 bottom-0 z-30">
+              <h3 className="text-white font-extrabold text-xl leading-[32px] tracking-wide">Tips meminum air kawah biar lidah melepuh 😁</h3>
+              <p className="text-white font-medium text-base leading-[26px] tracking-wide">
+                Lidah melepuh? why nott, kawah bukan untuk dilihat kawan.. tapi
+                untuk di minum.. rasakan kepanasan yang brutal 🔥
+              </p>
+              <p className="text-white font-semibold text-sm leading-6 tracking-wide">Google Trending Baru</p>
+            </div>
           </div>
         </div>
       </section>
