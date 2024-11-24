@@ -26,10 +26,16 @@ import whitePlay from "../assets/white-play.png";
 import mountain from "../assets/mountains.png";
 import cover from "../assets/cover2.jpg";
 import filter from "../assets/filter.png";
+import comment from "../assets/comment.svg";
+import man1 from "../assets/man1.png";
+import man2 from "../assets/man2.png";
+import man3 from "../assets/man3.png";
+import illstration from "../assets/illstration.png";
 
 import ImageCard from "../components/ImageCard";
 import InfoCard from "../components/InfoCard";
 import USPCard from "../components/USPCard";
+import TestimonialCard from "../components/TestimonialCard";
 
 const Home = () => {
   return (
@@ -303,12 +309,79 @@ const Home = () => {
               className="absolute top-0 left-0 w-full h-full object-cover rounded-2xl z-20"
             />
             <div className="p-[25px] h-[182px] max-w-[745px] flex flex-col gap-[15px] absolute left-0 bottom-0 z-30">
-              <h3 className="text-white font-extrabold text-xl leading-[32px] tracking-wide">Tips meminum air kawah biar lidah melepuh 😁</h3>
+              <h3 className="text-white font-extrabold text-xl leading-[32px] tracking-wide">
+                Tips meminum air kawah biar lidah melepuh 😁
+              </h3>
               <p className="text-white font-medium text-base leading-[26px] tracking-wide">
                 Lidah melepuh? why nott, kawah bukan untuk dilihat kawan.. tapi
                 untuk di minum.. rasakan kepanasan yang brutal 🔥
               </p>
-              <p className="text-white font-semibold text-sm leading-6 tracking-wide">Google Trending Baru</p>
+              <p className="text-white font-semibold text-sm leading-6 tracking-wide">
+                Google Trending Baru
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="py-20">
+        <div className="container mx-auto">
+          <div className="flex flex-col items-center gap-4">
+            <p className="text-[#4737FF] text-[18px] leading-[26.5px] font-extrabold tracking-9">
+              TESTIMONIAL DESTINIZE
+            </p>
+            <h2 className="text-[#151D21] text-5xl leading-[50px] tracking--1 font-extrabold flex items-center gap-4">
+              <img src={comment} alt="aeroplane emoji" width={40} height={40} />
+              <div className="w-2.5 h-2.5 bg-[#151D21] rounded-full" />
+              Apa Kata Mereka Tentang Kami
+            </h2>
+            <p className="max-w-[820px] text-[#18191F] text-[18px] leading-[32px] text-center">
+              Penasaran apa saja review dari pengguna yang memakai aplikasi dan
+              website Destinize buat nentuin kemana liburan mereka selanjutnya?
+              Yuk cek dibawah!
+            </p>
+          </div>
+          <div className="flex gap-[52px] justify-center items-center pt-20">
+            <TestimonialCard
+              img={man1}
+              name="Sandhika Galih"
+              post="Dosen di WPU"
+              desp="Destinize membantu saya Mencari spot tempat wisata baru di Indonesia
+          dengan Mudah"
+              rating={4}
+            />
+            <TestimonialCard
+              img={man2}
+              name="Syauqizaidan Khairan Khalaf"
+              post="Mahasiswa di WPU"
+              desp="Destinize membantu saya
+mendapatkan jodoh, tidak disangka
+bahwa jodoh saya adalah CS nya"
+              rating={4}
+            />
+            <TestimonialCard
+              img={man3}
+              name="Petrik Sesat"
+              post="Warga di Bikini Bottom"
+              desp="Bikini Bottom menjadi sangat
+ramai dikunjungi saat saya 
+memasukkannya di Destinize"
+              rating={4}
+            />
+          </div>
+        </div>
+      </section>
+      <section className="py-20">
+        <div className="container mx-auto">
+          <div className="bg-[#4372EB] h-[378px] w-full rounded-2xl shadow-xl">
+            <div className="flex items-center justify-between">
+              <div className="px-12 py-10">
+                <div className="max-w-[470px] flex flex-col justify-between gap-8">
+                <h3 className="text-white leading-[54px] text-[40px] font-extrabold">Masih bingung cari tempat yang cocok? 🤔</h3>
+                <p className="text-[#F1F2F6] text-lg leading-[32px]">Tenang, kami mempunyai fitur rekomendasi yang membantu kamu mencari tempat berlibur yang tepat dengan menjawab pertanyaan yang kami berikan.</p>
+                <p className="text-white text-xl leading-[30px] font-bold">Mulai sekarang →</p>
+                </div>
+              </div>
+              <img src={illstration} alt="illstration image" />
             </div>
           </div>
         </div>
