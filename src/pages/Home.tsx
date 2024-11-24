@@ -31,11 +31,13 @@ import man1 from "../assets/man1.png";
 import man2 from "../assets/man2.png";
 import man3 from "../assets/man3.png";
 import illstration from "../assets/illstration.png";
+import thinkingFace from "../assets/thinking-face.svg";
 
 import ImageCard from "../components/ImageCard";
 import InfoCard from "../components/InfoCard";
 import USPCard from "../components/USPCard";
 import TestimonialCard from "../components/TestimonialCard";
+import Accordion from "../components/Accordion";
 
 const Home = () => {
   return (
@@ -372,13 +374,108 @@ memasukkannya di Destinize"
       </section>
       <section className="py-20">
         <div className="container mx-auto">
+          <div className="flex justify-between items-center">
+            <div className="flex flex-col gap-3">
+              <p className="text-[#4475F2] text-[18px] leading-[26.5px] font-extrabold tracking-9">
+                FREQUENTLY ASKED QUESTION
+              </p>
+              <h2 className="text-[#14183E] text-5xl leading-[50px] tracking--1 font-extrabold flex items-center gap-4">
+                <img
+                  src={thinkingFace}
+                  alt="thinking face emoji"
+                  width={40}
+                  height={40}
+                />
+                <div className="w-2.5 h-2.5 bg-[#14183E] rounded-full" />
+                Pertanyaan yang Sering Diajukan
+              </h2>
+            </div>
+            <button className="text-[#4475F2] text-[17px] leading-[60px] font-semibold flex items-center gap-4">
+              Lihat semua{" "}
+              <img
+                src={rightArrow}
+                alt="right arrow icon"
+                width={20}
+                height={20}
+              />
+            </button>
+          </div>
+          <div className="pt-20">
+            <Accordion
+              title="Kenapa ya pembayaranku gagal banh? 😁"
+              answer="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+dummy text ever since the 1500s, wh"
+            />
+            <Accordion
+              title="Apakah rehan wangsaff adalah CEO dari Destinize? 😅😅😅"
+              answer="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+dummy text ever since the 1500s, wh"
+            />
+            <Accordion
+              title="Kenapa harus memilih Destinize?"
+              answer="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+dummy text ever since the 1500s, wh"
+            />
+            <Accordion
+              title="Afa iyah bang? Gapeduli 👆🏻😅"
+              answer="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+dummy text ever since the 1500s, wh"
+            />
+            <Accordion
+              title="Apa rekomendasi tempat buat orang yang jomblo? 😥"
+              answer="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+dummy text ever since the 1500s, wh"
+            />
+          </div>
+        </div>
+      </section>
+      <section className="py-20">
+        <div className="container mx-auto">
           <div className="bg-[#4372EB] h-[378px] w-full rounded-2xl shadow-xl">
             <div className="flex items-center justify-between">
               <div className="px-12 py-10">
                 <div className="max-w-[470px] flex flex-col justify-between gap-8">
-                <h3 className="text-white leading-[54px] text-[40px] font-extrabold">Masih bingung cari tempat yang cocok? 🤔</h3>
-                <p className="text-[#F1F2F6] text-lg leading-[32px]">Tenang, kami mempunyai fitur rekomendasi yang membantu kamu mencari tempat berlibur yang tepat dengan menjawab pertanyaan yang kami berikan.</p>
-                <p className="text-white text-xl leading-[30px] font-bold">Mulai sekarang →</p>
+                  <h3 className="text-white leading-[54px] text-[40px] font-extrabold">
+                    Masih bingung cari tempat yang cocok? 🤔
+                  </h3>
+                  <p className="text-[#F1F2F6] text-lg leading-[32px]">
+                    Tenang, kami mempunyai fitur rekomendasi yang membantu kamu
+                    mencari tempat berlibur yang tepat dengan menjawab
+                    pertanyaan yang kami berikan.
+                  </p>
+                  <p className="text-white text-xl leading-[30px] font-bold">
+                    Mulai sekarang →
+                  </p>
                 </div>
               </div>
               <img src={illstration} alt="illstration image" />
