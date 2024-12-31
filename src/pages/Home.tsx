@@ -42,10 +42,10 @@ import Accordion from "../components/Accordion";
 const Home = () => {
   return (
     <>
-      <section className="py-20">
-        <div className="container mx-auto">
-          <div className="flex justify-between w-full">
-            <div className="max-w-[658px]">
+      <section className="py-16 xl:py-20">
+        <div className="container mx-auto px-4 md:px-8 xl:px-0">
+          <div className="flex flex-col md:flex-row justify-between w-full gap-10 md:gap-0">
+            <div className="md:w-2/3 lg:w-3/5 xl:max-w-[658px]">
               <div className="text-[#4F7DF3] font-bold text-sm leading-none inline-flex gap-2 items-center bg-[#E5EDFF] py-2 px-5 rounded-full">
                 <img
                   src={airplane}
@@ -56,29 +56,30 @@ const Home = () => {
                 <div className="bg-[#4F7DF3] w-1.5 h-1.5 rounded-full" />
                 Explore the wonderful indonesia!
               </div>
-              <h2 className="mt-3 text-[#181E4B] text-[76px] leading-[89px] font-extrabold tracking--4">
+              <h2 className="mt-3 text-[#181E4B] text-[42px] lg:text-[56px] leading-[48px] lg:leading-[68px] xl:text-[76px] xl:leading-[89px] font-extrabold tracking--4">
                 Liburan & nikmati
                 <span className="text-[#4475F2]">tempat baru</span> di indonesia
               </h2>
-              <p className="mt-[30px] text-[#5E6282] text-base leading-6 font-medium max-w-[477px]">
+              <p className="mt-[18px] lg:mt-[30px] text-[#5E6282] text-base leading-6 font-medium max-w-[477px]">
                 Destinize membuat kamu selalu update terkait tempat liburan baru
                 di Indonesia dengan mengikuti perkembangan para influencer di
                 sosial media ✨
               </p>
-              <div className="mt-[34px] flex items-center gap-10">
-                <button className="text-white text-base leading-none font-bold bg-[#4475F2] px-6 py-5 rounded-xl shadow-lg shadow-[#4475F2]/25 max-w-[198px] w-full">
+              <div className="mt-4 lg:mt-[34px] flex items-center gap-5 lg:gap-10">
+                <button className="text-white text-base leading-none font-bold bg-[#4475F2] px-4 lg:px-6 py-3 lg:py-5 rounded-xl shadow-lg shadow-[#4475F2]/25 max-w-[198px] w-full">
                   Mulai sekarang →
                 </button>
-                <div className="flex gap-4 items-center">
-                  <div className="w-[50px] h-[50px] rounded-full border border-[#4475F2] flex justify-center items-center shadow-lg shadow-[#4475F2]/25">
+                <div className="md:hidden lg:block flex gap-2 md:gap-4 items-center">
+                  <div className="w-[32px] md:w-[50px] h-[32px] md:h-[50px] rounded-full border border-[#4475F2] flex justify-center items-center shadow-lg shadow-[#4475F2]/25">
                     <img
                       src={play}
                       alt="play icon"
                       width={14.42}
                       height={14.42}
+                      className="w-2.5 md:w-[14.42px] h-2.5 md:h-[14.42px]"
                     />
                   </div>
-                  <div className="text-[#686D77] font-bold text-[17px] leading-none">
+                  <div className="text-[#686D77] font-bold text-base md:text-[17px] leading-none">
                     Putar Demo
                   </div>
                 </div>
@@ -88,7 +89,7 @@ const Home = () => {
               <img src={hero} alt="hero image" />
             </div>
           </div>
-          <div className="flex items-center justify-center gap-24">
+          <div className="flex items-center flex-wrap justify-center md:pt-10 xl:pt-0 gap-10 xl:gap-24">
             <img src={axon} alt="platform 1" className="grayscale" />
             <img src={jetstar} alt="platform 1" className="grayscale" />
             <img src={expedia} alt="platform 1" className="grayscale" />
@@ -97,25 +98,24 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="py-20">
-        <div className="container mx-auto">
+      <section className="py-12 md:py-16 xl:py-20">
+        <div className="container mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex justify-between items-center">
-            <div className="flex flex-col gap-3">
-              <p className="text-[#4475F2] text-[18px] leading-[26.5px] font-extrabold tracking-9">
+            <div className="flex flex-col lg:gap-3">
+              <p className="text-[#4475F2] text-base m:text-[18px] leading-[26.5px] font-extrabold tracking-9">
                 DESTINASI FAVORIT
               </p>
-              <h2 className="text-[#14183E] text-5xl leading-[50px] tracking--1 font-extrabold flex items-center gap-4">
+              <h2 className="text-[#14183E] text-2xl md:text-3xl lg:text-4xl xl:text-5xl md:leading-[50px] tracking--1 font-extrabold flex items-center gap-2 lg:gap-4">
                 <img
                   src={airplane}
                   alt="aeroplane emoji"
-                  width={40}
-                  height={40}
+                  className="w-6 h-6 lg:w-10 lg:h-10"
                 />
                 <div className="w-2.5 h-2.5 bg-[#14183E] rounded-full" />
                 Temukan Destinasi Favoritmu
               </h2>
             </div>
-            <button className="text-[#4475F2] text-[17px] leading-[60px] font-semibold flex items-center gap-4">
+            <button className="hidden md:block text-[#4475F2] text-[17px] leading-[60px] font-semibold flex items-center gap-4">
               Lihat semua{" "}
               <img
                 src={rightArrow}
@@ -125,7 +125,7 @@ const Home = () => {
               />
             </button>
           </div>
-          <div className="flex justify-between items-center pt-12">
+          <div className="flex justify-center lg:justify-between flex-wrap items-center pt-8 xl:pt-12 gap-10 lg:gap-0">
             <ImageCard
               img={image1}
               imgAlt="image 1"
@@ -153,19 +153,19 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="-mt-[120px] -mb-[80px]">
-        <div className="container mx-auto">
-          <div className="flex items-center justify-between">
-            <div className="max-w-[600px] w-full">
-              <div className="flex flex-col gap-3">
-                <p className="text-[#4475F2] text-[18px] leading-[26.5px] font-extrabold tracking-9">
+      <section className="mt-10 -lg:mt-[60px] -xl:mt-[120px] mb-10 -lg:mb-[40px] -xl:mb-[80px]">
+        <div className="container mx-auto px-4 md:px-8 xl:px-0">
+          <div className="flex items-center justify-center lg:justify-between">
+            <div className="md:w-9/12 lg:w-3/5 xl:max-w-[600px] w-full">
+              <div className="flex flex-col lg:gap-3">
+                <p className="text-[#4475F2] text-base md:text-[18px] leading-[26.5px] font-extrabold tracking-9">
                   RESERVASI TEMPAT
                 </p>
-                <h2 className="text-[#14183E] text-5xl leading-[50px] tracking--1 font-extrabold">
-                  Gak mau ngantri? reservasi aja! 🤙🏻
+                <h2 className="text-[#14183E] text-2xl m:text-3xl lg:text-4xl xl:text-5xl md:leading-[42px] xl:leading-[50px] tracking--1 font-extrabold">
+                  Gak mau ngantri? reservasi 🤙🏻
                 </h2>
               </div>
-              <div className="flex flex-col gap-[51px] mt-8">
+              <div className="flex flex-col gap-8 xl:gap-[51px] mt-8">
                 <InfoCard
                   icon={searchE}
                   iconAlt="search icon"
@@ -186,24 +186,24 @@ const Home = () => {
                 />
               </div>
             </div>
-            <div className="grow">
+            <div className="hidden lg:block grow">
               <img src={feature} alt="feature image" />
             </div>
           </div>
         </div>
       </section>
-      <section className="py-20">
-        <div className="container mx-auto">
-          <div className="flex flex-col items-center gap-4">
-            <p className="text-[#4737FF] text-[18px] leading-[26.5px] font-extrabold tracking-9">
+      <section className="py-12 md:py-16 xl:py-20">
+        <div className="container mx-auto px-4 md:px-8 xl:px-0">
+          <div className="flex flex-col items-center lg:gap-4">
+            <p className="text-[#4737FF] text-base md:text-[18px] leading-[26.5px] font-extrabold tracking-9">
               CARI TEMPAT WISATA
             </p>
-            <h2 className="text-[#151D21] text-5xl leading-[50px] tracking--1 font-extrabold flex items-center gap-4">
-              <img src={map} alt="aeroplane emoji" width={40} height={40} />
+            <h2 className="text-[#151D21] text-2xl md:text-3xl lg:text-4xl xl:text-5xl md:leading-[50px] tracking--1 font-extrabold flex items-center gap-2 lg:gap-4">
+              <img src={map} alt="aeroplane emoji" className="w-6 h-6 lg:w-10 lg:h-10" />
               <div className="w-2.5 h-2.5 bg-[#151D21] rounded-full" />
-              Cari Tempat Wisata Didekatmu
+              Cari Tempat Wisata der
             </h2>
-            <p className="max-w-[820px] text-[#18191F] text-[18px] leading-[32px] text-center">
+            <p className="max-w-[820px] text-[#18191F] text-base md:text-[18px] leading-[24px] md:leading-[32px] text-center pt-4 md:pt-0">
               Fitur ini memungkinkan kamu untuk mencari tempat wisata atau
               tempat yang sedang populer di daerah kamu dengan begitu kamu akan
               selalu update dan gak kudet lagi 👍🏻
@@ -216,7 +216,7 @@ const Home = () => {
               className="mx-auto shadow-2xl rounded-xl"
             />
           </div>
-          <div className="items-center justify-center flex gap-[56px]">
+          <div className="items-center flex-col md:flex-row justify-center flex gap-8 md:gap-[18px] lg:gap-[56px]">
             <USPCard
               icon={addLocation}
               iconAlt="location icon"
@@ -238,25 +238,24 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="py-20">
-        <div className="container mx-auto">
+      <section className="py-12 md:py-16 xl:py-20">
+        <div className="container mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex justify-between items-center">
-            <div className="flex flex-col gap-3">
-              <p className="text-[#4475F2] text-[18px] leading-[26.5px] font-extrabold tracking-9">
+            <div className="flex flex-col lg:gap-3">
+              <p className="text-[#4475F2] text-base md:text-[18px] leading-[26.5px] font-extrabold tracking-9">
                 MENGENAL DESTINIZE
               </p>
-              <h2 className="text-[#14183E] text-5xl leading-[50px] tracking--1 font-extrabold flex items-center gap-4">
+              <h2 className="text-[#14183E] text-2xl md:text-3xl lg:text-4xl xl:text-5xl md:leading-[50px] tracking--1 font-extrabold flex items-center gap-2 lg:gap-4">
                 <img
                   src={framedPicture}
                   alt="framed picture emoji"
-                  width={40}
-                  height={40}
+                  className="w-6 h-6 lg:w-10 lg:h-10"
                 />
                 <div className="w-2.5 h-2.5 bg-[#14183E] rounded-full" />
-                Galeri Pariwisata & Blog Travel
+                Galeri Pariwata & Blog Travel
               </h2>
             </div>
-            <button className="text-[#4475F2] text-[17px] leading-[60px] font-semibold flex items-center gap-4">
+            <button className="hidden md:block text-[#4475F2] text-[17px] leading-[60px] font-semibold flex items-center gap-4">
               Lihat semua
               <img
                 src={rightArrow}
@@ -266,12 +265,12 @@ const Home = () => {
               />
             </button>
           </div>
-          <div className="pt-[54px] flex justify-center items-center gap-[43px]">
-            <div className="max-w-[276px] h-[455px] rounded-2xl	shadow-lg">
+          <div className="pt-[54px] flex flex-col md:flex-row justify-center items-center gap-[43px]">
+            <div className="md:max-w-[276px] md:h-[455px] rounded-2xl	shadow-lg">
               <img
                 src={mountain}
                 alt="mountains image"
-                className="rounded-t-lg"
+                className="rounded-t-lg w-full"
               />
               <div className="flex flex-col gap-4 px-6 py-5 bg-white">
                 <p className="text-[#BDBDBD] font-semibold text-sm leading-6 tracking-wide">
@@ -288,7 +287,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="grow h-[455px] relative shadow-2xl rounded-2xl flex justify-center items-center">
+            <div className="w-full md:grow h-[455px] relative shadow-2xl rounded-2xl flex justify-center items-center">
               <img
                 src={bgCover}
                 alt="cover image"
@@ -299,7 +298,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="relative h-[205px] w-full mt-[37px] shadow-lg">
+          <div className="relative h-[290px] md:h-[205px] w-full mt-[37px] shadow-lg">
             <img
               src={cover}
               alt="cover image"
@@ -310,7 +309,7 @@ const Home = () => {
               alt="filter image"
               className="absolute top-0 left-0 w-full h-full object-cover rounded-2xl z-20"
             />
-            <div className="p-[25px] h-[182px] max-w-[745px] flex flex-col gap-[15px] absolute left-0 bottom-0 z-30">
+            <div className="p-[25px] md:h-[182px] max-w-[745px] flex flex-col gap-[15px] absolute left-0 bottom-0 z-30">
               <h3 className="text-white font-extrabold text-xl leading-[32px] tracking-wide">
                 Tips meminum air kawah biar lidah melepuh 😁
               </h3>
@@ -325,24 +324,24 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="py-20">
-        <div className="container mx-auto">
-          <div className="flex flex-col items-center gap-4">
-            <p className="text-[#4737FF] text-[18px] leading-[26.5px] font-extrabold tracking-9">
+      <section className="py-12 md:py-16 xl:py-20">
+        <div className="container mx-auto px-4 md:px-8 xl:px-0">
+          <div className="flex flex-col items-center lg:gap-4">
+            <p className="text-[#4737FF] text-base md:text-[18px] leading-[26.5px] font-extrabold tracking-9">
               TESTIMONIAL DESTINIZE
             </p>
-            <h2 className="text-[#151D21] text-5xl leading-[50px] tracking--1 font-extrabold flex items-center gap-4">
-              <img src={comment} alt="aeroplane emoji" width={40} height={40} />
+            <h2 className="text-[#151D21] text-2xl md:text-3xl lg:text-4xl xl:text-5xl md:leading-[50px] tracking--1 font-extrabold flex items-center gap-2 lg:gap-4">
+              <img src={comment} alt="aeroplane emoji" className="w-6 h-6 lg:w-10 lg:h-10" />
               <div className="w-2.5 h-2.5 bg-[#151D21] rounded-full" />
-              Apa Kata Mereka Tentang Kami
+              Apa Kata Merka Tentng Kami
             </h2>
-            <p className="max-w-[820px] text-[#18191F] text-[18px] leading-[32px] text-center">
+            <p className="max-w-[820px] text-[#18191F] text-base md:text-[18px] leading-[24px] md:leading-[32px] text-center pt-4 md:pt-0">
               Penasaran apa saja review dari pengguna yang memakai aplikasi dan
               website Destinize buat nentuin kemana liburan mereka selanjutnya?
               Yuk cek dibawah!
             </p>
           </div>
-          <div className="flex gap-[52px] justify-center items-center pt-20">
+          <div className="flex flex-col md:flex-row gap-10 md:gap-4 lg:gap-[32px] xl:gap-[52px] justify-center items-center pt-20">
             <TestimonialCard
               img={man1}
               name="Sandhika Galih"
@@ -372,25 +371,24 @@ memasukkannya di Destinize"
           </div>
         </div>
       </section>
-      <section className="py-20">
-        <div className="container mx-auto">
+      <section className="py-12 md:py-16 xl:py-20">
+        <div className="container mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex justify-between items-center">
-            <div className="flex flex-col gap-3">
-              <p className="text-[#4475F2] text-[18px] leading-[26.5px] font-extrabold tracking-9">
+            <div className="flex flex-col lg:gap-3">
+              <p className="text-[#4475F2] text-base md:text-[18px] leading-[26.5px] font-extrabold tracking-9">
                 FREQUENTLY ASKED QUESTION
               </p>
-              <h2 className="text-[#14183E] text-5xl leading-[50px] tracking--1 font-extrabold flex items-center gap-4">
+              <h2 className="text-[#14183E] text-2xl md:text-3xl lg:text-4xl xl:text-5xl md:leading-[50px] tracking--1 font-extrabold flex items-center gap-2 lg:gap-4">
                 <img
                   src={thinkingFace}
                   alt="thinking face emoji"
-                  width={40}
-                  height={40}
+                  className="w-6 h-6 lg:w-10 lg:h-10"
                 />
                 <div className="w-2.5 h-2.5 bg-[#14183E] rounded-full" />
-                Pertanyaan yang Sering Diajukan
+                Pertanyaan Sering Diajukan
               </h2>
             </div>
-            <button className="text-[#4475F2] text-[17px] leading-[60px] font-semibold flex items-center gap-4">
+            <button className="hidden md:block text-[#4475F2] text-[17px] leading-[60px] font-semibold flex items-center gap-4">
               Lihat semua{" "}
               <img
                 src={rightArrow}
@@ -400,7 +398,7 @@ memasukkannya di Destinize"
               />
             </button>
           </div>
-          <div className="pt-20">
+          <div className="pt-12 xl:pt-20">
             <Accordion
               title="Kenapa ya pembayaranku gagal banh? 😁"
               answer="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
@@ -459,16 +457,16 @@ dummy text ever since the 1500s, wh"
           </div>
         </div>
       </section>
-      <section className="py-20">
-        <div className="container mx-auto">
-          <div className="bg-[#4372EB] h-[378px] w-full rounded-2xl shadow-xl">
-            <div className="flex items-center justify-between">
+      <section className="py-12 md:py-16 xl:py-20">
+        <div className="container mx-auto px-4 md:px-8 xl:px-0">
+          <div className="bg-[#4372EB] lg:h-[386.5px] xl:h-[378px] w-fit mx-auto lg:w-full rounded-2xl shadow-xl">
+            <div className="flex flex-col lg:flex-row items-center justify-between">
               <div className="px-12 py-10">
                 <div className="max-w-[470px] flex flex-col justify-between gap-8">
-                  <h3 className="text-white leading-[54px] text-[40px] font-extrabold">
+                  <h3 className="text-white leading-[42px] xl:leading-[54px] text-3xl md:text-[36px] xl:text-[40px] font-extrabold">
                     Masih bingung cari tempat yang cocok? 🤔
                   </h3>
-                  <p className="text-[#F1F2F6] text-lg leading-[32px]">
+                  <p className="text-[#F1F2F6] text-base xl:text-lg xl:leading-[32px]">
                     Tenang, kami mempunyai fitur rekomendasi yang membantu kamu
                     mencari tempat berlibur yang tepat dengan menjawab
                     pertanyaan yang kami berikan.

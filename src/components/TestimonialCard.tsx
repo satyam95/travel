@@ -15,7 +15,7 @@ const TestimonialCard = ({
   rating,
 }: TestimonialCardProps) => {
   return (
-    <div className="max-w-[366px] flex flex-col items-center px-[35px] py-10 rounded-md shadow-2xl">
+    <div className="lg:max-w-[366px] flex flex-col items-center px-4 lg:px-6 xl:px-[35px] py-6 lg:py-8 xl:py-10 rounded-md shadow-2xl">
       <img src={img} alt={`${name} image`} />
       <div className="pt-[30px] flex flex-col items-center gap-4">
         <p className="text-[#737373] text-base leading-[26px] font-medium tracking-wide text-center">

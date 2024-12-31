@@ -13,13 +13,13 @@ const Accordion = ({ title, answer }: AccordionProps) => {
 
   return (
     <div
-      className={`py-5 px-6 border border-[#EBEBEB] shadow-inner ${
+      className={`py-3 md:py-5 px-4 md:px-6 border border-[#EBEBEB] shadow-inner ${
         accordionOpen ? "bg-[#EBEBEB]" : "bg-white"
       }`}
     >
       <button
         onClick={() => setAccordionOpen(!accordionOpen)}
-        className="flex justify-between items-center w-full"
+        className="flex justify-between items-center gap-4 w-full"
       >
         <span
           className={`${
@@ -29,7 +29,7 @@ const Accordion = ({ title, answer }: AccordionProps) => {
           {title}
         </span>
         <div
-          className={`w-8 h-8  rounded-full flex items-center justify-center shadow-md ${
+          className={`min-w-8 min-h-8  rounded-full flex items-center justify-center shadow-md ${
             accordionOpen ? "bg-[#23A6F0]" : "border border-[#D3D3D3]"
           }`}
         >

@@ -7,9 +7,9 @@ import printer from "../assets/printer.png";
 const Footer = () => {
   return (
     <footer className="pt-14 pb-12">
-      <div className="container mx-auto">
-        <div className="flex justify-between gap-32 mb-7">
-          <div className="max-w-[483px]">
+      <div className="container mx-auto px-4 md:px-8 xl:px-0">
+        <div className="flex flex-col md:flex-row justify-between gap-12 md:gap-16 xl:gap-32 mb-7">
+          <div className="md:w-1/2 lg:max-w-[483px]">
             <div className="flex flex-col gap-4">
               <img src={footerLogo} alt="footer logo" width={32} height={32} />
               <h3 className="text-black text-2xl leading-none font-bold">
@@ -49,7 +49,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="grow grid grid-cols-3 gap-10">
+          <div className="grow grid grid-cols-3 gap-4 md:gap-10">
             <div className="flex flex-col gap-6">
               <h3 className="text-black text-lg leading-none font-bold">
                 Tentang
@@ -116,11 +116,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row items-center justify-between pt-8 md:pt-0 ">
           <p className="text-[#9A9EA6] text-sm leading-none cursor-pointer">
             © 2021-2022, All Rights Reserved
           </p>
-          <ul className="flex items-center gap-10">
+          <ul className="flex items-center flex-wrap justify-center gap-5 lg:gap-10">
             <li className="text-[#9A9EA6] text-sm leading-none cursor-pointer">
               Tentang Kami
             </li>

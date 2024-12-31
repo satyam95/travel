@@ -11,13 +11,13 @@ import user from "../assets/user.png";
 const Header = () => {
   return (
     <header>
-      <div className="container mx-auto py-3">
+      <div className="container mx-auto py-3 px-4 md:px-8 xl:px-0">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2 text-black font-bold text-lg leading-6">
             <img src={logo} alt="logo icon" />
             Destinize
           </div>
-          <div className="h-12 w-[530px] bg-[#F0F1F2] rounded-full flex items-center gap-2.5 px-[22px]">
+          <div className="hidden md:block h-12 w-[350px] xl:w-[530px] bg-[#F0F1F2] rounded-full flex items-center gap-2.5 px-[22px]">
             <img src={search} alt="search icon" width={16} height={16} />
             <input
               type="text"
@@ -32,7 +32,7 @@ const Header = () => {
               <img src={down} alt="dropdown icon" width={16} height={16} />
             </div>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="hidden lg:block flex items-center gap-3">
             <div className="w-12 h-12 bg-[#E3EBFD] rounded-full flex justify-center items-center">
               <img src={location} alt="location icon" width={20} height={20} />
             </div>
@@ -52,10 +52,10 @@ const Header = () => {
         </div>
       </div>
       <div className="w-full h-px bg-[#DFDFE0]" />
-      <div className="container mx-auto">
+      <div className="hidden lg:block container mx-auto md:px-8 xl:px-0">
         <div className="flex items-center justify-between py-2.5">
           <nav>
-            <ul className="flex items-center gap-10">
+            <ul className="flex items-center gap-5 xl:gap-10">
               <li className="text-[#9A9EA6] text-sm leading-none flex items-center gap-2">
                 Gunung
                 <img
