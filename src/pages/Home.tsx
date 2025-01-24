@@ -69,7 +69,7 @@ const Home = () => {
                 <button className="text-white text-base leading-none font-bold bg-[#4475F2] px-4 lg:px-6 py-3 lg:py-5 rounded-xl shadow-lg shadow-[#4475F2]/25 max-w-[198px] w-full">
                   Mulai sekarang →
                 </button>
-                <div className="md:hidden lg:block flex gap-2 md:gap-4 items-center">
+                <div className="md:hidden lg:flex gap-2 md:gap-4 items-center">
                   <div className="w-[32px] md:w-[50px] h-[32px] md:h-[50px] rounded-full border border-[#4475F2] flex justify-center items-center shadow-lg shadow-[#4475F2]/25">
                     <img
                       src={play}

@@ -17,7 +17,7 @@ const Header = () => {
             <img src={logo} alt="logo icon" />
             Destinize
           </div>
-          <div className="hidden md:block h-12 w-[350px] xl:w-[530px] bg-[#F0F1F2] rounded-full flex items-center gap-2.5 px-[22px]">
+          <div className="hidden h-12 w-[350px] xl:w-[530px] bg-[#F0F1F2] rounded-full md:flex items-center gap-2.5 px-[22px]">
             <img src={search} alt="search icon" width={16} height={16} />
             <input
               type="text"
@@ -32,7 +32,7 @@ const Header = () => {
               <img src={down} alt="dropdown icon" width={16} height={16} />
             </div>
           </div>
-          <div className="hidden lg:block flex items-center gap-3">
+          <div className="hidden lg:flex items-center gap-3">
             <div className="w-12 h-12 bg-[#E3EBFD] rounded-full flex justify-center items-center">
               <img src={location} alt="location icon" width={20} height={20} />
             </div>
